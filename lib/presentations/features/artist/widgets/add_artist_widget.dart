@@ -141,6 +141,8 @@ class _AddArtistWidgetState extends State<AddArtistWidget> {
                           msg: value.message, backgroundColor: Colors.red);
                     },
                     addArtist: (value) {
+                      Fluttertoast.showToast(
+                          msg: "Added artist successfully", backgroundColor: Colors.green);
                       context.pop(true);
                     },
                   );

@@ -169,7 +169,8 @@ class _AddSongWidgetState extends State<AddSongWidget> {
                       Fluttertoast.showToast(
                           msg: value.message, backgroundColor: Colors.red);
                     },
-                    addSong: (value) {
+                    addSong: (value) {Fluttertoast.showToast(
+                        msg: "Added the song successfully", backgroundColor: Colors.green);
                       context.pop(true);
                     },
                   );

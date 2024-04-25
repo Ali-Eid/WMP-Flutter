@@ -118,10 +118,11 @@ class _ArtistDetailsViewState extends State<ArtistDetailsView> {
                       physics:
                           const NeverScrollableScrollPhysics(), // Disable scrolling
                       itemCount: value.songs.length,
-                      padding: EdgeInsets.symmetric(horizontal: AppSizeW.s16),
+                      padding: EdgeInsets.symmetric(horizontal: AppSizeW.s16 , vertical: AppSizeH.s6),
                       itemBuilder: (context, index) {
                         final song = value.songs[index];
                         return Container(
+                          margin: EdgeInsets.symmetric(vertical: AppSizeH.s6),
                           // Wrap ListTile with Container for decoration
                           decoration: BoxDecoration(
                             color: Colors
